@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://arup-portfolio.vercel.app/sitemap.xml
+
+# Specific rules for common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow crawling of API routes and admin areas
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow crawling of important pages
+Allow: /
+Allow: /about
+Allow: /research
+Allow: /publications
+Allow: /contact
+Allow: /climate-explorer
+Allow: /climate-game
+
+# Crawl delay (optional)
+Crawl-delay: 1
